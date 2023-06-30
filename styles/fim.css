@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+section, 
+footer {
+    padding: 54px 0;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+p{
+  color: aliceblue;
+}
+
+#logo {
+    max-width: 50vh; 
+    max-height: auto; 
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn {
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+
+    animation-name: animate-outline;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite; 
+
+}
+
+.btn:hover {
+    background-color: #3580db;
+}
+
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: aliceblue;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn):after {
+    content: '';
+    background-color: #4f9cf9;
+    height: 3px;
+    width: 0;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+.corpo {
+    background: rgb(139,157,184);
+    background: radial-gradient(circle, rgba(139,157,184,1) 0%, rgba(11,24,61,1) 66%);
+}
+
+.corpo .container {
+    display: flex;
+    align-items: center;
+}
+
+.corpo .container .container_img {
+    width: 50%;
+}
+
+.corpo .container .container_img img {
+    width: 100%;
+}
+
+.corpo .container .container_texto {
+    width: 30%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.footer {
+    background-color: #4f9cf9;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
